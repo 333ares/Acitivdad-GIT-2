@@ -12,13 +12,20 @@ public class MatrizApp {
 		
 		Random r = new Random();
 		
-		System.out.println("--- MATRIZ ---");
 		for (int i = 0; i < matriz.length; i++) {
 			for (int j = 0; j < matriz.length; j++) {
-				matriz[i][j] = r.nextInt();
+				matriz[i][j] = r.nextInt(101);
 			}
 		}
 
+		System.out.println("--- MATRIZ ---");
+		
+		for (int i = 0; i < matriz.length; i++) {		
+			for (int j = 0; j < matriz[i].length; j++) {
+				System.out.print(matriz[i][j] + " "); 
+			}
+			System.out.println();	
+		}
 		
 		//Búsqueda de un número
 		
