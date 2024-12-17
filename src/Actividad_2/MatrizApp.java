@@ -50,14 +50,14 @@ public class MatrizApp {
 		}
 		
 		// suma-matriz
-		int sum = 0;
+		int sum = 0; // Variable para hacer la suma.
 		
 		for (int i = 0; i < numeros.length; i++) {
 			for (int j = 0; j < numeros[i].length; j++) {
-				sum = sum + numeros[i][j];
+				sum = sum + numeros[i][j]; // Se suma el valor de la posición [i][j] de la matriz numeros a sum.
 			}
 		}
 		
-		System.out.println("\nLa suma de la matriz es " + sum + " .");
+		System.out.println("\nLa suma de la matriz es " + sum + " ."); // Mostramos el resultado.
 	}
 }
