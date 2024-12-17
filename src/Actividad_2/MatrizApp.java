@@ -16,6 +16,17 @@ public class MatrizApp {
 		int buscador = a.nextInt();
 		
 		boolean encontrado = false;
+		
+		for (int i = 0; i < numeros.length; i++) {
+			for (int j = 0; j < numeros[i].length; j++) {
+
+				if (buscador == numeros[i][j]) {
+					encontrado = true;
+					System.out.println("El número esta en la fila " + i + ", columna " + j + ".");
+					break;
+				} 
+			}
+		}
 	}
 
 }
