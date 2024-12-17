@@ -27,6 +27,11 @@ public class MatrizApp {
 				} 
 			}
 		}
+		
+		if (!encontrado) {
+			System.out.print("El número no se ha encontrado.");
+
+		}
 	}
 
 }
