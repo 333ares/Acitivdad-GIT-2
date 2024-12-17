@@ -48,5 +48,16 @@ public class MatrizApp {
 		if (!encontrado) { // Si no se ha encontrado el número.
 			System.out.print("El número no se ha encontrado."); // Muestro el mensaje.
 		}
+		
+		// suma-matriz
+		int sum = 0;
+		
+		for (int i = 0; i < numeros.length; i++) {
+			for (int j = 0; j < numeros[i].length; j++) {
+				sum = sum + numeros[i][j];
+			}
+		}
+		
+		System.out.println("\nLa suma de la matriz es " + sum + " .");
 	}
 }
