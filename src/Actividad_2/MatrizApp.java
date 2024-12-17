@@ -1,6 +1,7 @@
 package Actividad_2;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class MatrizApp {
 
@@ -27,8 +28,29 @@ public class MatrizApp {
 			System.out.println(); //Hago que se muestre línea por línea.
 		}
 
-		// Búsqueda de un número
+		// busqueda-numero
+		Scanner a = new Scanner(System.in);
+		
+		System.out.print("Busca un número: ");
+		int buscador = a.nextInt();
+		
+		boolean encontrado = false;
+		
+		for (int i = 0; i < numeros.length; i++) {
+			for (int j = 0; j < numeros[i].length; j++) {
 
+				if (buscador == numeros[i][j]) {
+					encontrado = true;
+					System.out.println("El número esta en la fila " + i + ", columna " + j + ".");
+					break;
+				} 
+			}
+		}
+		
+		if (!encontrado) {
+			System.out.print("El número no se ha encontrado.");
+
+		}
 	}
 
 }
