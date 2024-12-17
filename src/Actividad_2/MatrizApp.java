@@ -14,6 +14,8 @@ public class MatrizApp {
 		
 		System.out.print("Busca un número: ");
 		int buscador = a.nextInt();
+		
+		boolean encontrado = false;
 	}
 
 }
