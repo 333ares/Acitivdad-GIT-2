@@ -31,7 +31,7 @@ public class MatrizApp {
 		// busqueda-numero
 		Scanner a = new Scanner(System.in); // Escáner para recoger los datos de los usuarios.
 
-		System.out.print("Busca un número: "); // Pregunto el número que se quiere buscar.
+		System.out.print("\nBusca un número: "); // Pregunto el número que se quiere buscar.
 		int buscador = a.nextInt(); // Guardo esos datos en la variable buscador.
 
 		boolean encontrado = false; // Boolean para determinar si el número se ha encontrado en la matriz.
