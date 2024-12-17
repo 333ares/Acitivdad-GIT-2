@@ -1,7 +1,7 @@
 package Actividad_2;
 
-import java.util.Scanner;
 import java.util.Random;
+import java.util.Scanner;
 
 public class MatrizApp {
 
@@ -15,15 +15,15 @@ public class MatrizApp {
 
 		for (int i = 0; i < numeros.length; i++) { // Este bucle se encarga de las filas.
 			for (int j = 0; j < numeros.length; j++) { // Este bucle se encraga de las columnas.
-				numeros[i][j] = r.nextInt(101); // Relleno la matriz con el random y le establezco un rango de números
-												// que puede generar (1 - 100).
+				numeros[i][j] = r.nextInt(101); // Relleno la matriz con el random y le establezco un rango de números que puede generar (1 - 100).
 			}
 		}
 
-		System.out.println("--- MATRIZ ---"); // Muestro un título para la matriz.
+    System.out.println("--- MATRIZ ---"); // Muestro un título para la matriz.
 		for (int i = 0; i < numeros.length; i++) {
 			for (int j = 0; j < numeros[i].length; j++) {
 				System.out.print(numeros[i][j] + " "); // Muestro la matriz con espacios.
+
 			}
 			System.out.println(); // Hago que se muestre línea por línea.
 		}
@@ -38,7 +38,6 @@ public class MatrizApp {
 
 		for (int i = 0; i < numeros.length; i++) { //
 			for (int j = 0; j < numeros[i].length; j++) {
-
 				if (buscador == numeros[i][j]) { // Mientras el número buscado sea igual a algun número de la matriz.
 					encontrado = true; // Cambiamos el boolean a true, porque hemos encontrado el número.
 					System.out.println("El número esta en la fila " + i + ", columna " + j + "."); // Muestro su posición.
@@ -46,12 +45,8 @@ public class MatrizApp {
 				}
 			}
 		}
-
 		if (!encontrado) { // Si no se ha encontrado el número.
 			System.out.print("El número no se ha encontrado."); // Muestro el mensaje.
-
 		}
-
 	}
-
 }
